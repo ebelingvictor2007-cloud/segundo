@@ -1,1 +1,260 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stående Vad → Bättre än Sittande | Vadträning</title>
+  <meta name="description" content="Varför stående vadhävningar slår sittande vadövningar med böjda ben (90°). Bättre stretch, mer kraft, mer gastrocnemius-aktivering."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f0f11;
+      --text: #e0e0e5;
+      --accent: #00d4ff;
+      --card: #16161a;
+      --border: #2a2a35;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 0 4rem;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 4.8rem);
+      font-weight: 700;
+      letter-spacing: -1px;
+      background: linear-gradient(90deg, #00d4ff, #00ff9d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.4rem;
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+      color: #a0a0b0;
+      max-width: 620px;
+      margin: 1rem auto 0;
+    }
+
+    .vs-container {
+      display: grid;
+      grid-template-columns: 1fr 80px 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin: 3rem 0;
+      text-align: center;
+    }
+
+    .side {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem 1.8rem;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .side:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,212,255,0.12);
+      border-color: var(--accent);
+    }
+
+    .loser {
+      opacity: 0.65;
+      filter: grayscale(0.4);
+    }
+
+    .winner::after {
+      content: "BÄTTRE VALET";
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.4rem 1.2rem;
+      border-radius: 50px;
+      letter-spacing: 1px;
+    }
+
+    .vs {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: #444;
+      text-shadow: 0 0 20px rgba(0,0,0,0.8);
+    }
+
+    .pros {
+      list-style: none;
+      margin: 2rem 0;
+      font-size: 1.1rem;
+    }
+
+    .pros li {
+      margin: 1.1rem 0;
+      padding-left: 1.8rem;
+      position: relative;
+    }
+
+    .pros li::before {
+      content: "✓";
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 3.5rem 0;
+      font-size: 1.05rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 1.3rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .comparison-table th {
+      background: #1a1a22;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .check { color: #00ff9d; font-weight: bold; font-size: 1.3rem; }
+    .cross { color: #ff4d4d; font-weight: bold; font-size: 1.3rem; }
+
+    footer {
+      text-align: center;
+      padding: 4rem 0 6rem;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 720px) {
+      .vs-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .vs {
+        font-size: 4rem;
+        transform: rotate(90deg);
+        margin: 1rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Stående Vadhävningar</h1>
+    <div class="subtitle">Varför de slår sittande vadövningar med 90° böjning</div>
+  </header>
+
+  <div class="vs-container">
+    <div class="side winner">
+      <h2>Stående vadhävningar</h2>
+      <ul class="pros">
+        <li>Maximal stretch i gastrocnemius</li>
+        <li>Högre total muskelaktivering</li>
+        <li>Bättre kraftutveckling (tyngre vikter)</li>
+        <li>Mer funktionell rörelse</li>
+        <li>Naturligare belastningskurva</li>
+      </ul>
+    </div>
+
+    <div class="vs">VS</div>
+
+    <div class="side loser">
+      <h2>Sittande vadhävningar (90°)</h2>
+      <ul class="pros">
+        <li>Mycket kortare muskel</li>
+        <li>Lite soleus-fokus (men sämre)</li>
+        <li>Sämre stretch → sämre hypertrofi</li>
+        <li>Lägre maximal belastning</li>
+        <li>Mindre gastrocnemius-rekrytering</li>
+      </ul>
+    </div>
+  </div>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Parameter</th>
+        <th>Stående</th>
+        <th>Sittande 90°</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gastrocnemius stretch</td>
+        <td class="check">Mycket bra</td>
+        <td class="cross">Dålig</td>
+      </tr>
+      <tr>
+        <td>Gastrocnemius aktivering</td>
+        <td class="check">Hög</td>
+        <td class="cross">Låg-medel</td>
+      </tr>
+      <tr>
+        <td>Soleus aktivering</td>
+        <td class="check">Bra</td>
+        <td class="check">Mycket bra</td>
+      </tr>
+      <tr>
+        <td>Möjlig belastning</td>
+        <td class="check">Hög</td>
+        <td class="cross">Medel-låg</td>
+      </tr>
+      <tr>
+        <td>Hypertrofi-potential totalt</td>
+        <td class="check">★★★★★</td>
+        <td class="cross">★★☆☆☆</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    Slutsats 2025–2026: Gör <strong>stående</strong> som huvudövning.<br>
+    Sittande 90° kan funka som komplement om du redan har bra gastroc-volym.<br><br>
+    "Om du bara får göra EN vadövning — välj stående."
+  </footer>
+
+</div>
+
+</body>
+</html>
 
